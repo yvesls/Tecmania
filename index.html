@@ -1,76 +1,384 @@
-<!DOCTYPE html>
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+}
+#problema{
+    width: 100%;
+    background-color: yellowgreen;
+}
+/*Noticias principais*/
+#principal-home{
+    width: 100%;
+}
 
-<head>
-    <title>Tecmania - HOME</title>
-    <meta charset="utf-8">
-    <link href="style.css" rel="stylesheet" type="text/css">
-</head>
+.ctn-noticiasPrincipais{
+    background: red; /*ficou escondido*/
+    height: 500px;
+    margin: 0px 0px 10px 0px;
+}
 
-<body id="home">
-    <div class="ctn-principal">
-        <!--logo + menu-->
-        <nav id="MENU-BUTTON">
-            <div id="logo"><a href="/index.html"><img src="/imagens/logo.png"></a></div>
-            <ul id="menu-mobile">
-                <li><a href="/index.html">HOME</a></li>
-                <li><a href="/contato.html">Contato</a></li>
-                <li><a href="/cadastro.html">Cadastro</a></li>
-                <li><a href="">Dificuldades</a></li>
-            </ul>            
+.ntc-esquerda{
+    background: green;
+    display: inline-block;
+    width: 50%;
+    height: 500px;
+}
 
-            <div id="menu-btn">
-                <svg width="30" height="30">
-                    <path d="M0,5  30,5"     stroke="#FFf" stroke-width="4"/>
-                    <path d="M0,15 30,15"   stroke="#fff" stroke-width="4"/>
-                    <path d="M0,25 30,25"   stroke="#fff" stroke-width="4"/>
-                </svg>
-            </div>
-        </nav>
-        </div>
+.ntc-esquerda section{
+    background: yellow;
+    width: 100%;
+    height: 250px;
+}
+
+.ntc-direita{
+    background: violet;
+    width: 50%;
+    height: 500px;
+    float: right;
+}
+
+/*outras noticias*/
+.ctn-outro{
+    background: blue;
+    height: 800px;
+}
+
+.outra-ntc-esquerda{
+    background: yellow;
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+}
+
+.outra-ntc-direita{
+    background:  orange;
+    float: right;
+    width: 50%;
+    height: 100%;
+}
+
+.ctn-outro section{
+    height: 31%;
+}
+
+
+.ctn-outro h4{
+    height: 6%;
+}
+
+/*rodape*/
+footer{
+    clear: both;
+    height: auto;
+    background-color: grey;
+    padding: 10px;
+}
+
+#fot2{
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 5px;
+}
+a:link{
+    color: white;
+}
+p{
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.icones{
+    width: 25px;
+}
+
+#contato footer, #contato2 footer{
+    margin-top: 20px;
+}
+
+/*contatos e cadastro*/
+#contato{
+    width: 100%;
+    height: auto;
+    background: linear-gradient(to bottom, rgb(206, 212, 212), #928a80);
+}
+
+.conteiner-ctt{
+    width: 50%;
+    min-width: 500px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 120px;
+    text-align: center;
+}
+
+#contato2{
+    height: auto;
+    background: linear-gradient(to bottom,rgb(206, 212, 212), #928a80);
+}
+
+.conteiner-ctt2{
+    width: 50%;
+    min-width: 500px;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 120px;
+    text-align: center;
+}
+
+.conteiner-ctt img,
+.conteiner-ctt2 img{
+    width: 120px;
+    height: 120px;
+    margin-top: -60px;
+    margin-bottom: 30px;
+}
+
+.conteiner-ctt input,
+.conteiner-ctt2 input{
+    height: 40px;
+    width: 90%;
+    font-size: 18px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding-left: 0px;
+}
+
+.conteiner-ctt textarea,
+.conteiner-ctt2 textarea{
+    width: 90%;
+    height: 150px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#enviar input{
+    color: #fff;
+    background-color: #f79300;
+    border: 2px solid #db7d00;
+    padding: 5px 20px;
+    height: 40px;
+    width: 45%;
+    background:linear-gradient(to bottom,#faa600, #f68a00);
+}
+
+.conteiner-ctt #nascimento{
+    height: 40px;
+    width: 60%;
+    margin: 0;
+    background-color: #fff;
+    padding-left: 0px;
+}
+.conteiner-ctt #nascimentoL{
+    display: inline-block;
+    height: 40px;
+    width: 30%;
+    font-size: 18px;
+    padding-left: 0px;
+    background-color: white;
+}
+
+.conteiner-ctt h4{
+    text-align: left;
+    text-indent: 5%;
+    margin: 0 0 5px 0;
+}
+
+.conteiner-ctt #estado-civil input, 
+.conteiner-ctt #sexo input{
+    width: 5%;
+    height: 20px;
+    margin-left: 10%;
+}
+.conteiner-ctt #estado-civil,
+.conteiner-ctt #sexo{
+    color: gray;
+    text-align: left;
+    margin: 0 0 10px 5%;
+    background-color: #fff;
+    width: 90%;
+    border: 3px hidden black;
+}
+
+/*configuranção das pagina de leitura*/
+#principal-ntc{
+    background: salmon;
+    margin: 0;
+    overflow: hidden;
+}
+
+#leitura{
+    background-color: sandybrown;
+    float: left;
+    width: 80%;
+    height: 700px;/*a pena para exibir o layout depois deve ser retirado*/
+}
+
+#leitura section{
+    margin: 0 0 0 2%;
+}
+
+#outras-ntc{
+    float: right;
+    background-color: seagreen;
+    width: 20%;
+}
+
+#outras-ntc section{
+    margin: 0 0 20px 5%;
+}
+
+/*Menu
+--------------------------*/
+nav {
+    position: relative;
+    left:0;
+    top:0;
+    width: 100%;
+    background-color: #333;
+    height: 70px;
+    margin: 0;
+}
+
+#logo {
+    height: 100%;
+    position: relative;
+    left: 40%;
+    top: 0;
+    z-index: 1;
+}
+            
+#logo img {
+    width:270px;
+}
+            
+nav ul#menu-desktop {
+    display: none;
+}
+            
+nav ul#menu-mobile {
+    margin: 0 0 0 5%;
+    padding: 0;                 
+    display: none;   
+}
+            
+nav ul#menu-mobile li {
+    width:20%;
+    list-style-type:none;
+    display: block;
+} 
+            
+nav ul#menu-mobile li a {
+    width: 20%;
+    min-width: 200px;
+    padding: 20px 0;
+    text-decoration: none;
+    background-color: rgba(213,26,44,0.3);
+    color:#FFF;
+    display:block;
+    margin-right: 0;
+    font-family: Roboto, sans-serif;
+    font-size: 80%;
+    letter-spacing: 0.60;
+    text-align: center;
+    border-bottom: 1px solid #111;
+} 
+            
+nav div#menu-btn {
+    position:absolute;
+    cursor: pointer;
+    display: block;
+    top:20px;
+    left:20px;
+    height: 30px;
+    width: 30px;
+}
+
+/*Configurando para Mobile*/
+@media only screen and (min-width:200px) and (max-width:700px) {
+    /*Noticias principais*/
+    .ctn-noticiasPrincipais{
+        background: red; /*ficou escondido*/
+        height: 500px;
+        margin: 0px 0px 10px 0px;
+    }
+
+    .ntc-esquerda{
+        background: green;
+        display: inline-block;
+        width: 100%;
+        height: 500px;
+    }
+
+    .ntc-esquerda section{
+        background: yellow;
+        width: 100%;
+        height: 250px;
+    }
+
+    .ntc-direita{
+        background: violet;
+        width: 100%;
+        height: 500px;
+        float: right;
+    }
+
+    /*outras noticias*/
+    .ctn-outro{
+        background: blue;
+        height: 800px;
+    }
+
+    .outra-ntc-esquerda{
+        background: yellow;
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+    }
+
+    .outra-ntc-direita{
+        background:  orange;
+        float: right;
+        width: 100%;
+        height: 100%;
+    }
+
+    .ctn-outro section{
+        height: 31%;
+    }
+
+    .ctn-outro h4{
+        height: 6%;
+    }
         
-        <!--parte principal-->
-        <div id="principal-home">
-            <div class="ctn-noticiasPrincipais">
-                <div class="ntc-esquerda">
-                    <section>noticia esquerda 1</section>
-                    <section>noticia esquerda 1</section>
-                </div>
-                <section class="ntc-direita">noticia direita</section>
-            </div>
+    /*rodape-Mobile*/
+    footer{
+        clear: both;
+        background-color: grey;
+        padding: 10px;
+    }
 
-            <!--outros-->
-            <div class="ctn-outro">
-                <div class="outra-ntc-esquerda">
-                    <h4>aki</h4>
-                    <section>outra noticia esquerda 1</section>
-                    <section>outra noticia esquerda 2</section>
-                    <section>outra noticia esquerda 3</section>
-                </div>
-                <div class="outra-ntc-direita">
-                    <h4>aki</h4>
-                    <section>outra noticia direita 1</section>
-                    <section>outra noticia direita 2</section>
-                    <section>outra noticia direita 3</section>
-                </div>
-            </div>
-        </div>
-        <!--rodape-->
-        <footer>
-            <div id="fot2" align="center">Novidades a um click!</div>
-            <p>
-                 
-                Av. Pinheiros, 94 <br>
-                Alegre-ES <br><br>
-                Email para contato: <br>
-                <a href="tecmania@gmail.com">tecmania@gmail.com</a> <br><br>
-            </p>
-            <div align="center">
-                <a href="...."><img class="icones" src="./imagens/face.png"></a>
-                <a href="...."><img class="icones" src="./imagens/twitter.png"></a>
-                <a href="...."><img class="icones" src="./imagens/instagram.jpg"></a> 
-            </div>
-        </footer>
-    </div>
-    <script src="_js/jquery.js"></script> 
-    <script src="_js/botão.js"></script> 
-</body>
+    #artigo #outras-ntc{
+        display: none;
+    }
+    #artigo #leitura{
+        background-color: sandybrown;
+        float: left;
+        width: 100%;
+        height: 700px;/*a pena para exibir o layout depois deve ser retirado*/
+    }
+}
+
+
+
+                       
