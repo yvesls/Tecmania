@@ -3,11 +3,7 @@
     padding: 0;
 }
 body{
-    margin: 0;
-}
-#problema{
-    width: 100%;
-    background-color: yellowgreen;
+    overflow-x: hidden;
 }
 
 /*Noticias principais*/
@@ -383,3 +379,4 @@ nav div#menu-btn {
 
 
                        
+
