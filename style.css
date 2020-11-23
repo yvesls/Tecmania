@@ -218,7 +218,7 @@ p{
     background-color: sandybrown;
     float: left;
     width: 80%;
-    height: 700px;/*a pena para exibir o layout depois deve ser retirado*/
+    height: auto;/*a pena para exibir o layout depois deve ser retirado*/
 }
 
 #leitura section{
