@@ -1,104 +1,82 @@
+body{
+    overflow-x: hidden;
+}
 *{
     margin: 0;
     padding: 0;
 }
-body{
-    overflow-x: hidden;
-}
-
-/*Noticias principais*/
-#principal-home{
+.ctn-principal{
     width: 100%;
+    padding: 0px;
+    margin: 0px;
 }
-
-.ctn-noticiasPrincipais{
-    background: red; /*ficou escondido*/
-    height: 500px;
-    margin: 0px 0px 10px 0px;
-}
-
-.ntc-esquerda{
-    background: green;
-    display: inline-block;
-    width: 50%;
-    height: 500px;
-}
-
-.ntc-esquerda section{
-    background: yellow;
+/*Menu
+--------------------------*/
+nav {
+    position: relative;
+    left:0;
+    top:0;
     width: 100%;
-    height: 250px;
+    background-color: #333;
+    height: auto;/* alterações Yves: auto*/
+    margin: 0;
 }
-
-.ntc-direita{
-    background: violet;
-    width: 50%;
-    height: 500px;
-    float: right;
+            
+nav ul#menu-desktop {
+    display: none;
 }
-
-/*outras noticias*/
-.ctn-outro{
-    background: blue;
-    height: 800px;
+            
+nav ul#menu-mobile {
+    margin: 0 0 0 5%;
+    padding: 0;                 
+    display: none;   
 }
-
-.outra-ntc-esquerda{
-    background: yellow;
-    width: 50%;
-    height: 100%;
-    display: inline-block;
-}
-
-.outra-ntc-direita{
-    background:  orange;
-    float: right;
-    width: 50%;
-    height: 100%;
-}
-
-.ctn-outro section{
-    height: 31%;
-}
-
-
-.ctn-outro h4{
-    height: 6%;
-}
-
-/*rodape*/
-footer{
-    clear: both;
-    height: auto;
-    background-color: grey;
-    padding: 10px;
-}
-
-#fot2{
-    font-size: 25px;
-    color: white;
-    font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-bottom: 5px;
-}
-a:link{
-    color: white;
-}
-p{
+            
+nav ul#menu-mobile li {
+    width:20%;
+    list-style-type:none;
+    display: block;
+} 
+            
+nav ul#menu-mobile li a {
+    width: 20%;
+    min-width: 200px;
+    padding: 20px 0;
+    text-decoration: none;
+    background-color: rgba(213,26,44,0.3);
+    color:#FFF;
+    display:block;
+    margin-right: 0;
+    font-family: Roboto, sans-serif;
+    font-size: 80%;
+    letter-spacing: 0.60;
     text-align: center;
-    color: white;
-    font-size: 15px;
-    font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-bottom: 1px solid #111;
+} 
+            
+nav div#menu-btn {
+    position:absolute;
+    cursor: pointer;
+    display: block;
+    top:20px;
+    left:20px;
+    height: 30px;
+    width: 30px;
 }
-.icones{
-    width: 25px;
+/* alterações Yves: menu secundário*/ 
+.menu2{
+    margin-left: 15%;
+    margin-right: auto;
 }
-
-#contato footer, #contato2 footer{
-    margin-top: 20px;
+.menu2 a{
+    color:white;
 }
-
+.menu2 li{
+    font-size: 3em;
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+}
 /*contatos e cadastro*/
 #contato{
     width: 100%;
@@ -206,156 +184,209 @@ p{
     width: 90%;
     border: 3px hidden black;
 }
-
-/*configuranção das pagina de leitura*/
-#principal-ntc{
-    background: salmon;
-    margin: 0;
-    overflow: hidden;
-}
-
-#leitura{
-    background-color: sandybrown;
-    float: left;
-    width: 80%;
-    height: auto;/*a pena para exibir o layout depois deve ser retirado*/
-}
-
-#leitura section{
-    margin: 0 0 0 2%;
-}
-
-#outras-ntc{
-    float: right;
-    background-color: seagreen;
-    width: 20%;
-}
-
-#outras-ntc section{
-    margin: 0 0 20px 5%;
-}
-
-/*Menu
---------------------------*/
-nav {
-    position: relative;
-    left:0;
-    top:0;
-    width: 100%;
-    background-color: #333;
-    height: 70px;
-    margin: 0;
-}
-
+/*alterações Yves: mudei o posicionamento e dimencionamento da logo*/ 
 #logo {
     height: 100%;
     position: relative;
-    left: 40%;
+    left: 30%;
     top: 0;
     z-index: 1;
 }
             
 #logo img {
-    width:270px;
-}
-            
-nav ul#menu-desktop {
-    display: none;
-}
-            
-nav ul#menu-mobile {
-    margin: 0 0 0 5%;
-    padding: 0;                 
-    display: none;   
-}
-            
-nav ul#menu-mobile li {
-    width:20%;
-    list-style-type:none;
-    display: block;
-} 
-            
-nav ul#menu-mobile li a {
-    width: 20%;
-    min-width: 200px;
-    padding: 20px 0;
-    text-decoration: none;
-    background-color: rgba(213,26,44,0.3);
-    color:#FFF;
-    display:block;
-    margin-right: 0;
-    font-family: Roboto, sans-serif;
-    font-size: 80%;
-    letter-spacing: 0.60;
-    text-align: center;
-    border-bottom: 1px solid #111;
-} 
-            
-nav div#menu-btn {
-    position:absolute;
-    cursor: pointer;
-    display: block;
-    top:20px;
-    left:20px;
-    height: 30px;
-    width: 30px;
+    width:40%;
 }
 
+/*alterações Yves: tudo até o final das alterações*/
+/*Noticias principais - home*/
+
+.ctn-noticiasPrincipais{
+    overflow: hidden;
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url(./imagens/fundo.png);
+    height: auto;
+}
+
+#ctn-artigos{
+    width: 70%;
+    height: auto;
+    overflow: hidden;
+    margin: 5% 5% 5% 15%;
+    background-color: white;
+    border-radius: 1%;
+    padding-top: 1%;
+}
+.ntcs-artigos{
+    width: 99%;
+    border-bottom: 1px solid grey;
+    padding-bottom: 3%;
+    margin:0% 0% 2% 0%;
+    overflow: hidden;
+    clear: both;
+}
+.home-img{
+    width: 20%;
+    float: left;
+}
+.home-text{
+    width: 80%;
+    float: right;
+    overflow: hidden;
+}
+a{
+   color: black;
+}
+a:link{
+    cursor: pointer;
+    text-decoration: none;
+}
+a:hover {
+    color: #00008B;
+    cursor: pointer;
+}
+
+.ctn-noticiasPrincipais img{
+    width: 100%;
+    height: auto;
+}
+.ctn-noticiasPrincipais p{
+    font-size: 1em;
+    font-style: italic;
+    margin-left: 2%;
+}
+.ctn-noticiasPrincipais h3{
+    margin-left: 2%;
+    font-size:1em;
+    color: black;
+    font-weight: bold;
+}
+
+/*configuranção das pagina de leitura*/
+
+#principal-ntc{
+    overflow: hidden;
+    background-image: url(./imagens/fundo.png);
+}
+#leitura{
+    background-color: white;
+    width: 70%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 5% 5% 5% 15%;
+    border-radius: 1%;
+}
+#leitura h1{
+    padding: 0.2% 0.2% 2% 0.2%;
+}
+#leitura h4{
+    font-weight: normal;
+    font-style: italic;
+    text-indent: 30px;
+    font-size: 1em;
+    padding: 0.2% 0.2% 1% 0.2%;
+}
+#leitura h3{
+    padding: 0.2% 0.2% 2% 0.2%;
+}
+#leitura p{
+    padding: 0.2%;
+    font-size: 1em;
+    text-indent: 3%;
+}
+#leitura section{
+    padding: 2%;
+}
+#leitura blockquote{
+    font-size: 0.8em;
+    font-style: italic;
+}
+a blockquote{
+    text-decoration: none;
+}
+a blockquote:visited{
+    color: grey;
+}
+#leitura li{
+    list-style: upper-roman;
+    margin: 0px 0px 0px 3%;
+    font-size: 1em;
+}
+#leitura img{
+    padding:0px;
+    margin: 2% 3% 2% 0%;
+    width: 50%;
+    max-width: 100%;
+    height: auto;
+    float: left;
+}
+#artigoacad{
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+}
+#artigoacad h1, h3{
+    padding: 0.2% 0.2% 1% 0.2%;
+}
+#artigoacad h4{
+    font-style: italic;
+}
+
+/* final das alterações Yves: tudo até aqui*/  
+
+/*rodape*/
+/* alterações Yves: mudei a cor do footer*/  
+footer{
+    height: 100%;
+    background-color:  #333;
+    padding: 10px;
+}
+/*final das alterações Yves: mudei a cor do footer*/ 
+#fot2{
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 5px;
+}
+a:link{
+    color: white;
+}
+#pfot{
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.icones{
+    width: 25px;
+}
+/*alterações Yves: tirei algumas coisas (outro-ntc, etc) e dimensionei os textos e imagens*/ 
 /*Configurando para Mobile*/
 @media only screen and (min-width:200px) and (max-width:700px) {
     /*Noticias principais*/
     .ctn-noticiasPrincipais{
-        background: red; /*ficou escondido*/
-        height: 500px;
+        background-image: url(./imagens/fundo.png);
+        height: auto;
         margin: 0px 0px 10px 0px;
     }
 
-    .ntc-esquerda{
-        background: green;
-        display: inline-block;
-        width: 100%;
-        height: 500px;
+    #ctn-artigos{
+        text-align: justify;
+        font-size: 0.7em;
     }
 
-    .ntc-esquerda section{
-        background: yellow;
-        width: 100%;
-        height: 250px;
+    .home-img{
+        width: 80%;
+        padding: 0 10% 0 10%;
     }
-
-    .ntc-direita{
-        background: violet;
-        width: 100%;
-        height: 500px;
-        float: right;
+    .home-text{
+        text-indent: 10%;
+        width: 80%;
+        padding: 0 10% 0 10%;
     }
-
-    /*outras noticias*/
-    .ctn-outro{
-        background: blue;
-        height: 800px;
-    }
-
-    .outra-ntc-esquerda{
-        background: yellow;
-        width: 100%;
-        height: 100%;
-        display: inline-block;
-    }
-
-    .outra-ntc-direita{
-        background:  orange;
-        float: right;
-        width: 100%;
-        height: 100%;
-    }
-
-    .ctn-outro section{
-        height: 31%;
-    }
-
-    .ctn-outro h4{
-        height: 6%;
+    .menu2 li{
+        font-size: 1.5em;
     }
         
     /*rodape-Mobile*/
@@ -368,14 +399,13 @@ nav div#menu-btn {
     #artigo #outras-ntc{
         display: none;
     }
+
     #artigo #leitura{
-        background-color: sandybrown;
-        float: left;
-        width: 100%;
-        height: 700px;/*a pena para exibir o layout depois deve ser retirado*/
+        width: 70%;
+        margin: 5% 5% 5% 15%;
     }
 }
-
+/* final das alterações Yves*/ 
 
 
                        
