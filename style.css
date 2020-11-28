@@ -10,6 +10,7 @@ body{
     padding: 0px;
     margin: 0px;
 }
+
 /*Menu
 --------------------------*/
 nav {
@@ -17,19 +18,14 @@ nav {
     left:0;
     top:0;
     width: 100%;
-    background-color: #333;
-    height: auto;/* alterações Yves: auto*/
+    background-color: #333; /* alterações Yves: cor*/ 
+    height: 300px; 
     margin: 0;
-}
-            
-nav ul#menu-desktop {
-    display: none;
-}
-            
+}           
 nav ul#menu-mobile {
     margin: 0 0 0 5%;
     padding: 0;                 
-    display: none;   
+    display: block;   
 }
             
 nav ul#menu-mobile li {
@@ -56,14 +52,14 @@ nav ul#menu-mobile li a {
             
 nav div#menu-btn {
     position:absolute;
+    top:50%;
+    left:2%;
     cursor: pointer;
     display: block;
-    top:20px;
-    left:20px;
-    height: 30px;
-    width: 30px;
 }
+
 /* alterações Yves: menu secundário*/ 
+/*
 .menu2{
     margin-left: 15%;
     margin-right: auto;
@@ -72,11 +68,273 @@ nav div#menu-btn {
     color:white;
 }
 .menu2 li{
-    font-size: 3em;
+    font-size: 2vw;
     display: inline-block;
     text-decoration: none;
     list-style: none;
+} */
+/*alterações Yves: mudei o posicionamento e dimencionamento da logo*/ 
+#logo {
+    height: 100%;
+    position: relative;
+    left: 30%;
+    top: 0;
+    z-index: 1;
 }
+            
+#logo img {
+    width:40%;
+}
+/*Noticias principais - index*/
+#titulo{
+    width: 55%;
+    background-color: white;
+    border-radius: 1%;
+    padding: 3%;
+    margin: 5% 20%;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2vw;
+}
+#box-1{
+    width: 30%;
+    float: left;
+    left: 0%;
+    margin: 0% 2% 0% 18%;
+}
+#box-2{
+    width: 30%;
+    float: right;
+    right: 0%;
+    margin: 0% 18% 0% 2%;
+}
+#box-3{
+    clear: both;
+    width: 30%;
+    float: left;
+    left: 0%;
+    bottom: 0%;
+    margin: 2% 2% 2% 18%;
+}
+#box-4{
+    float: right;
+    width: 30%;
+    position: relative;
+    right: 0%;
+    bottom: 0%;
+    margin: 2% 18% 2% 2%;
+}
+#box-5{
+    clear: both;
+    width: 30%;
+    float: left;
+    left: 0%;
+    bottom: 0%;
+    margin: 2% 2% 2% 18%;
+}
+#box-6{
+    float: right;
+    width: 30%;
+    position: relative;
+    right: 0%;
+    bottom: 0%;
+    margin: 2% 18% 2% 2%;
+}
+#noticiasp{
+    width: 100%;
+    height: auto;
+    clear: both;
+}
+.noticiasp{
+    padding: 5%;
+    border-radius: 1%;
+    background-color: white;
+}
+.index-img{
+    width:100%;
+    height: auto;
+}
+.index-text{
+    width: 100%;
+    overflow: hidden;
+}
+
+/*alterações Yves: tudo até o final das alterações*/
+/*Artigos e notícias - Artigo*/
+
+.ctn-noticiasPrincipais{
+    overflow: hidden;
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url(./imagens/fundo.png);
+    height: auto;
+    background-color: beige;
+}
+
+#ctn-artigos{
+    width: 70%;
+    height: auto;
+    overflow: hidden;
+    margin: 5% 5% 5% 15%;
+    background-color: white;
+    border-radius: 1%;
+    padding-top: 1%;
+}
+.ntcs-artigos{
+    width: 99%;
+    border-bottom: 1px solid grey;
+    padding-bottom: 3%;
+    margin:0% 0% 2% 0%;
+    overflow: hidden;
+    clear: both;
+}
+.home-img{
+    width: 20%;
+    float: left;
+}
+.home-text{
+    width: 80%;
+    float: right;
+    overflow: hidden;
+}
+a{
+   color: black;
+}
+a:link{
+    cursor: pointer;
+    text-decoration: none;
+}
+a:hover {
+    color: #00008B;
+    cursor: pointer;
+}
+
+.ctn-noticiasPrincipais img{
+    width: 100%;
+    height: auto;
+}
+.ctn-noticiasPrincipais p{
+    font-size: 1.2vw;
+    font-style: italic;
+    margin-left: 2%;
+}
+.ctn-noticiasPrincipais h3{
+    margin-left: 2%;
+    font-size: 1.2vw;
+    color: black;
+    font-weight: bold;
+}
+
+/*configuranção das pagina de leitura*/
+
+#principal-ntc{
+    overflow: hidden;
+    background-image: url(./imagens/fundo.png);
+}
+#leitura{
+    background-color: white;
+    width: 70%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 5% 5% 5% 15%;
+    border-radius: 1%;
+    padding-bottom: 2%;
+}
+#leitura h1{
+    padding: 0.2% 0.2% 2% 0.2%;
+    font-size: 2vw;
+}
+#leitura h4{
+    font-weight: normal;
+    font-style: italic;
+    text-indent: 30px;
+    font-size: 1.5vw;
+    padding: 0.2% 0.2% 1% 0.2%;
+}
+#leitura h3{
+    padding: 0.2% 0.2% 2% 0.2%;
+}
+#leitura p{
+    padding: 0.2%;
+    font-size: 1.5vw;
+    text-indent: 3%;
+}
+#leitura section{
+    padding: 2%;
+}
+#leitura blockquote{
+    font-size: 1vw;
+    font-style: italic;
+}
+a blockquote{
+    text-decoration: none;
+}
+a blockquote:visited{
+    color: grey;
+}
+#leitura li{
+    list-style: upper-roman;
+    margin: 0px 0px 0px 3%;
+    font-size: 1.5vw;
+}
+#leitura img{
+    padding:0px;
+    margin: 2% 3% 2% 0%;
+    width: 50%;
+    max-width: 100%;
+    height: auto;
+    float: left;
+}
+#artigoacad{
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6vw;
+}
+#artigoacad h1, h3{
+    padding: 0.2% 0.2% 1% 0.2%;
+}
+#artigoacad h4{
+    font-style: italic;
+}
+#aref {
+    text-decoration: none;
+    margin-left: 70%;
+    font-size: 1.5vw;
+    color: blue;
+}
+#aref:hover {
+    color: grey;
+}
+/* final das alterações Yves: tudo até aqui*/  
+
+/*rodape*/
+/* alterações Yves: mudei a cor do footer*/  
+footer{
+    height: 100%;
+    background-color:  #333;
+    padding: 10px;
+}
+/*final das alterações Yves: mudei a cor do footer*/ 
+#fot2{
+    font-size: 1.7vw;
+    color: white;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 5px;
+}
+a:link{
+    color: white;
+}
+#pfot{
+    text-align: center;
+    color: white;
+    font-size: 1.3vw;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.icones{
+    width: 2vw;
+}
+
 /*contatos e cadastro*/
 #contato{
     width: 100%;
@@ -184,183 +442,7 @@ nav div#menu-btn {
     width: 90%;
     border: 3px hidden black;
 }
-/*alterações Yves: mudei o posicionamento e dimencionamento da logo*/ 
-#logo {
-    height: 100%;
-    position: relative;
-    left: 30%;
-    top: 0;
-    z-index: 1;
-}
-            
-#logo img {
-    width:40%;
-}
 
-/*alterações Yves: tudo até o final das alterações*/
-/*Noticias principais - home*/
-
-.ctn-noticiasPrincipais{
-    overflow: hidden;
-    width: 100%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-image: url(./imagens/fundo.png);
-    height: auto;
-}
-
-#ctn-artigos{
-    width: 70%;
-    height: auto;
-    overflow: hidden;
-    margin: 5% 5% 5% 15%;
-    background-color: white;
-    border-radius: 1%;
-    padding-top: 1%;
-}
-.ntcs-artigos{
-    width: 99%;
-    border-bottom: 1px solid grey;
-    padding-bottom: 3%;
-    margin:0% 0% 2% 0%;
-    overflow: hidden;
-    clear: both;
-}
-.home-img{
-    width: 20%;
-    float: left;
-}
-.home-text{
-    width: 80%;
-    float: right;
-    overflow: hidden;
-}
-a{
-   color: black;
-}
-a:link{
-    cursor: pointer;
-    text-decoration: none;
-}
-a:hover {
-    color: #00008B;
-    cursor: pointer;
-}
-
-.ctn-noticiasPrincipais img{
-    width: 100%;
-    height: auto;
-}
-.ctn-noticiasPrincipais p{
-    font-size: 1em;
-    font-style: italic;
-    margin-left: 2%;
-}
-.ctn-noticiasPrincipais h3{
-    margin-left: 2%;
-    font-size:1em;
-    color: black;
-    font-weight: bold;
-}
-
-/*configuranção das pagina de leitura*/
-
-#principal-ntc{
-    overflow: hidden;
-    background-image: url(./imagens/fundo.png);
-}
-#leitura{
-    background-color: white;
-    width: 70%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 5% 5% 5% 15%;
-    border-radius: 1%;
-}
-#leitura h1{
-    padding: 0.2% 0.2% 2% 0.2%;
-}
-#leitura h4{
-    font-weight: normal;
-    font-style: italic;
-    text-indent: 30px;
-    font-size: 1em;
-    padding: 0.2% 0.2% 1% 0.2%;
-}
-#leitura h3{
-    padding: 0.2% 0.2% 2% 0.2%;
-}
-#leitura p{
-    padding: 0.2%;
-    font-size: 1em;
-    text-indent: 3%;
-}
-#leitura section{
-    padding: 2%;
-}
-#leitura blockquote{
-    font-size: 0.8em;
-    font-style: italic;
-}
-a blockquote{
-    text-decoration: none;
-}
-a blockquote:visited{
-    color: grey;
-}
-#leitura li{
-    list-style: upper-roman;
-    margin: 0px 0px 0px 3%;
-    font-size: 1em;
-}
-#leitura img{
-    padding:0px;
-    margin: 2% 3% 2% 0%;
-    width: 50%;
-    max-width: 100%;
-    height: auto;
-    float: left;
-}
-#artigoacad{
-    text-align: justify;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.8em;
-}
-#artigoacad h1, h3{
-    padding: 0.2% 0.2% 1% 0.2%;
-}
-#artigoacad h4{
-    font-style: italic;
-}
-
-/* final das alterações Yves: tudo até aqui*/  
-
-/*rodape*/
-/* alterações Yves: mudei a cor do footer*/  
-footer{
-    height: 100%;
-    background-color:  #333;
-    padding: 10px;
-}
-/*final das alterações Yves: mudei a cor do footer*/ 
-#fot2{
-    font-size: 25px;
-    color: white;
-    font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-bottom: 5px;
-}
-a:link{
-    color: white;
-}
-#pfot{
-    text-align: center;
-    color: white;
-    font-size: 15px;
-    font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.icones{
-    width: 25px;
-}
 /*alterações Yves: tirei algumas coisas (outro-ntc, etc) e dimensionei os textos e imagens*/ 
 /*Configurando para Mobile*/
 @media only screen and (min-width:200px) and (max-width:700px) {
@@ -373,7 +455,7 @@ a:link{
 
     #ctn-artigos{
         text-align: justify;
-        font-size: 0.7em;
+        font-size: 1.5vw;
     }
 
     .home-img{
@@ -386,13 +468,13 @@ a:link{
         padding: 0 10% 0 10%;
     }
     .menu2 li{
-        font-size: 1.5em;
+        font-size: 1.5vw;
     }
         
     /*rodape-Mobile*/
     footer{
         clear: both;
-        background-color: grey;
+        background-color: #333;
         padding: 10px;
     }
 
@@ -405,8 +487,7 @@ a:link{
         margin: 5% 5% 5% 15%;
     }
 }
+
 /* final das alterações Yves*/ 
-
-
                        
 
